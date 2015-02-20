@@ -23,6 +23,17 @@
  */
 
 /**
+ * Localize the plugin's strings.
+ *
+ * @since 1.0.1
+ */
+function cedaro_infinite_wp_list_tables_load_textdomain() {
+	$plugin_rel_path = dirname( plugin_basename( __FILE__ ) ) . '/languages';
+	load_plugin_textdomain( 'infinite-wp-list-tables', false, $plugin_rel_path );
+}
+add_action( 'plugins_loaded', 'cedaro_infinite_wp_list_tables_load_textdomain' );
+
+/**
  * Enqueue and print assets to make WP List Tables support infinite scroll.
  *
  * @since 1.0.0
