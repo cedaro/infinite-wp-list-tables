@@ -1,0 +1,25 @@
+{
+  "name": "infinite-wp-list-tables",
+  "version": "4.2.1",
+  "description": "A simple WordPress image widget.",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cedaro/infinite-wp-list-tables.git"
+  },
+  "author": {
+    "name": "Brady Vercher",
+    "email": "brady@blazersix.com",
+    "url": "http://www.cedaro.com/"
+  },
+  "license": "GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/cedaro/infinite-wp-list-tables/issues"
+  },
+  "homepage": "https://github.com/cedaro/infinite-wp-list-tables",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-wp-i18n": "~0.5",
+    "matchdep": "~0.3.0"
+  }
+}
