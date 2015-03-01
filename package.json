@@ -1,7 +1,7 @@
 {
   "name": "infinite-wp-list-tables",
   "version": "4.2.1",
-  "description": "A simple WordPress image widget.",
+  "description": "A WordPress plugin to add infinite scroll support for WP List Tables in the admin panel.",
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",

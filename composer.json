@@ -1,22 +1,22 @@
 {
-	"name": "cedaro/infinite-wp-list-tables",
-	"description": "A WordPress to add infinite scroll support for WP List Tables in the admin panel.",
-	"keywords": ["wordpress"],
-	"type": "wordpress-plugin",
-	"homepage": "https://github.com/cedaro/infinite-wp-list-tables",
-	"license": "GPL-2.0+",
-	"authors": [
-		{
-			"name": "Brady Vercher",
-			"email": "brady@blazersix.com",
-			"homepage": "http://www.cedaro.com/"
-		}
-	],
-	"support": {
-		"issues": "https://github.com/cedaro/infinite-wp-list-tables/issues",
-		"source": "https://github.com/cedaro/infinite-wp-list-tables"
-	},
-	"require": {
-		"composer/installers": "~1.0"
-	}
+  "name": "cedaro/infinite-wp-list-tables",
+  "description": "A WordPress plugin to add infinite scroll support for WP List Tables in the admin panel.",
+  "keywords": ["wordpress"],
+  "type": "wordpress-plugin",
+  "homepage": "https://github.com/cedaro/infinite-wp-list-tables",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Brady Vercher",
+      "email": "brady@blazersix.com",
+      "homepage": "http://www.cedaro.com/"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/cedaro/infinite-wp-list-tables/issues",
+    "source": "https://github.com/cedaro/infinite-wp-list-tables"
+  },
+  "require": {
+    "composer/installers": "~1.0"
+  }
 }
