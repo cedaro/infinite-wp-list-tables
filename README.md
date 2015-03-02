@@ -2,9 +2,9 @@
 
 Infinite scroll support for WP List Tables in the WordPress admin panel.
 
-__Contributors:__ [Brady Vercher](https://twitter.com/bradyvercher)
-__Requires:__ 4.0
-__Tested up to:__ 4.1
+__Contributors:__ [Brady Vercher](https://twitter.com/bradyvercher)  
+__Requires:__ 4.0  
+__Tested up to:__ 4.1  
 __License:__ [GPL-2.0+](http://www.gnu.org/licenses/gpl-2.0.html)
 
 Supports list tables for posts, pages, comments, users and most custom post types. Taxonomies (categories, tags, etc) should also be supported.
