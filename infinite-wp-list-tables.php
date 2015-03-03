@@ -5,7 +5,7 @@
  * @package   InfiniteWPListTables
  * @author    Brady Vercher
  * @link      http://www.cedaro.com/
- * @copyright Copyright (c) 2015 Cedaro, Inc.
+ * @copyright Copyright (c) 2015 Cedaro, LLC
  * @license   GPL-2.0+
  *
  * @wordpress-plugin
