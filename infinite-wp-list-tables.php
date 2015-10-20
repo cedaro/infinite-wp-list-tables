@@ -5,7 +5,7 @@
  * @package   InfiniteWPListTables
  * @author    Brady Vercher
  * @link      http://www.cedaro.com/
- * @copyright Copyright (c) 2015 Cedaro, LLC
+ * @copyright Copyright (c) 2015 Cedaro, Inc.
  * @license   GPL-2.0+
  *
  * @wordpress-plugin
@@ -103,6 +103,24 @@ class Cedaro_Infinite_WP_List_Tables {
 			margin-top: 0;
 			vertical-align: middle;
 		}
+
+		#go-top-button {
+			position: fixed;
+			display: block;
+			width: 20px;
+			height: 20px;
+			right: 20px;
+			bottom: 50px;
+			display: none;
+			opacity: .3;
+			z-index: 2000;
+			border-top: 2px solid black;
+			border-right: none;
+			border-bottom: none;
+			border-left: 2px solid black;
+			transform: rotate(45deg);
+			text-indent: -99999px;
+		}
 		</style>
 		<?php
 	}
@@ -141,6 +159,31 @@ class Cedaro_Infinite_WP_List_Tables {
 			}, function() {
 				// Keep the pagination links visible.
 				$( '.pagination-links' ).show();
+			});
+			
+			// Smooth scroll top floating button
+			// Uses '#wpwrap' as 'top of admin page' ?
+			$('body').prepend( '<a href="#wpwrap" id="go-top-button"><?php _e( 'top', 'infinite-wp-list-tables' ) ?></a>');
+			var $topButton = $('#go-top-button');
+			$topButton.hover( function() {
+					$(this).css('opacity', '.8');
+				}, function() {
+					$(this).css('opacity', '.3');
+				}
+			).click( function(e) {
+				var $this = $(this);
+				$('html,body').animate({scrollTop:$($this.attr('href')).offset().top},200);
+				e.preventDefault();
+			});
+
+			$(window).scroll( function(){
+				var posScroll = $(document).scrollTop();
+				if ( posScroll >= 550 ){
+					$topButton.fadeIn(600);
+				}
+				else {
+					$topButton.fadeOut(600);
+				}
 			});
 		});
 		</script>
